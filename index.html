@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sag'dullayev Alimardon Racing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🏁 ALIMARDON <span>RACING</span></div>
+    <div class="author">CREATED BY SAG'DULLAYEV ALIMARDON</div>
+  </header>
+
+  <main class="game-layout">
+    <section class="intro">
+      <p class="eyebrow">ULTIMATE STREET RACING</p>
+      <h1>Tezlikni <span>his qil!</span></h1>
+      <p class="description">
+        Raqiblardan qoch, ball to‘pla va yangi levellarni och.
+        Eng yaxshi natijangni qayd et!
+      </p>
+      <div class="controls-hint">
+        <span>⬅️ A / ←</span>
+        <span>➡️ D / →</span>
+        <span>⏸ P — Pauza</span>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <div class="hud">
+        <div class="stat">
+          <small>BALL</small>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+          <small>LEVEL</small>
+          <strong id="level">1</strong>
+        </div>
+        <div class="stat">
+          <small>VAQT</small>
+          <strong id="time">00:00</strong>
+        </div>
+        <div class="stat">
+          <small>REKORD</small>
+          <strong id="best">0</strong>
+        </div>
+      </div>
+
+      <div class="track" id="track">
+        <div class="road-label">ALIMARDON GP</div>
+        <div class="road-line line-one"></div>
+        <div class="road-line line-two"></div>
+
+        <div class="car player" id="player">
+          <div class="car-window"></div>
+          <div class="car-light light-left"></div>
+          <div class="car-light light-right"></div>
+          <div class="wheel wheel-left"></div>
+          <div class="wheel wheel-right"></div>
+        </div>
+
+        <div class="overlay" id="overlay">
+          <div class="overlay-box">
+            <div class="trophy">🏎️</div>
+            <h2 id="overlayTitle">Poyga boshlanadi!</h2>
+            <p id="overlayText">
+              Yo‘lda qol, mashinalardan qoch va g‘alaba qozon.
+            </p>
+            <button id="startBtn">▶ O‘YINNI BOSHLASH</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-footer">
+        <span>🏁 SAG'DULLAYEV ALIMARDON</span>
+        <span id="status">START GA TAYYOR</span>
+      </div>
+
+      <div class="mobile-controls">
+        <button id="leftBtn" aria-label="Chapga">◀</button>
+        <button id="pauseBtn">Ⅱ PAUZA</button>
+        <button id="rightBtn" aria-label="O‘ngga">▶</button>
+      </div>
+    </section>
+
+    <section class="tips">
+      <div><span>01</span><strong>Qoch</strong><p>To‘siq mashinalariga urilma.</p></div>
+      <div><span>02</span><strong>Ball to‘pla</strong><p>Har bir soniya va masofa ball beradi.</p></div>
+      <div><span>03</span><strong>Levelni och</strong><p>Har 500 ballda yangi level!</p></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Sag'dullayev Alimardon Racing — Barcha huquqlar himoyalangan.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
